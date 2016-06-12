@@ -1,0 +1,19 @@
+{
+  "name": "publify_0.0.9",
+  "version": "0.0.9",
+  "description": "Action based PubSub Library on top of Socket.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PARAGJYOTI/Publify.js.git"
+  },
+  "author": "paragjyoti2012@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PARAGJYOTI/Publify.js/issues"
+  },
+  "homepage": "https://github.com/PARAGJYOTI/Publify.js#readme"
+}
