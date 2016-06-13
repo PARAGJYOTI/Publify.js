@@ -1,6 +1,6 @@
 {
-  "name": "publify_0.0.9",
-  "version": "0.0.9",
+  "name": "publify",
+  "version": "0.0.92",
   "description": "Action based PubSub Library on top of Socket.io",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/PARAGJYOTI/Publify.js.git"
   },
+   "readme":"README.md",
+   
   "author": "paragjyoti2012@gmail.com",
   "license": "MIT",
   "bugs": {

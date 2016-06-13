@@ -95,7 +95,7 @@ Publify.prototype.publish=function(action){
         
         {  
            
-      var x=this.connectedClients['pqrst'].socketid
+      var x=this.connectedClients[Target].socketid
     
        
         
@@ -187,10 +187,17 @@ Publify.prototype.subscribe=function(action,callback){
  */
 
 
-Publify.prototype.transmit=function(action,callback){
+Publify.prototype.transmit=function(actionName,callback){
     var self=this;
-    this.subscribe(action,function(){
-        self.publish(action,callback)
+    this.subscribe(actionName,function(data){
+        var action={
+            actionName:actionName,
+            from:data.From,
+            to: data.Target,
+            payload:data.Payload
+        }
+        self.publish(action)
+        callback(action)
     })
     
 }
